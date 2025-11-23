@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background: url(./images/IMG_2765.jpg) center center / cover no-repeat fixed;
+            color: white;
+            overflow-x: hidden;
+            text-shadow: 0 2px 8px #111;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            box-sizing: border-box;
+        }
+        nav a.logo {
+            font-size: 24px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-decoration: none;
+            color: white;
+        }
+        nav ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            scroll-margin-top: 120px;
+        }
+        .hero h1 {
+            font-size: 70px;
+            margin: 0;
+        }
+        .hero p {
+            margin-top: 10px;
+            font-size: 20px;
+            max-width: 600px;
+        }
+
+        
+        section {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 30px;
+            scroll-margin-top: 120px;
+        }
+        section h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        section p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background: #121212;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #222;
+            
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .button1 {
+            display: inline;
+            background: #221f1f;
+            height: 30px auto;
+            width: 25px auto;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: large;
+            color: white;
+            border: 3px;
+            border-radius: 1cm;
+            border-width: 50px;
+            border-color: #222;
+            cursor: pointer;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px;
+            margin-top: 80px;
+            background: #111;
+            color: #999;
+        }
+        
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: inherit;
+            background-size: 120% auto;
+            filter: grayscale(100%);
+            z-index: -1;
+        }
+        
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">cal.</a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>Leonardo III M. Calupig</h1>
+        <p>Student, Artist, and Creator. Born to Create, Be Creative.</p>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Originating from the humble town of Tayabas City, Leonardo III M. Calupig is a 20 year old undergraduate student that is a celebrated editor and cinematographer. 
+            He is currently pursuing his Bachelor’s degree in Entertainment and Multimedia Computing (BSEMC) Major in Digital Animation Technology (DAT) at Manuel S. Enverga University Foundation. 
+            
+            He once studied Civil Engineering but eventually shifted focus in his passion and commitment to push the boundaries of storytelling. He is the visionary mind who captured the story behind the award winning short film “Per Aspera Ad Astra” which won at the 2024 MSEUF M.I.L. Film Festival: “Breaking the Silence: Short Film Making on Mental Heath.” His commitment to his edited works are a rollercoaster of suspense, elegance on a endless journey into the realms of both real and digital worlds.
+        </p>
+    </section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="./images/per-aspera.png" alt="Project One" class="project-image">
+            <h3>Per Aspera Ad Astra</h3>
+            <p>Leonardo III Calupig captured and edited a not-so-ordinary story of a young man trying to understand the cruel yet beautiful universe in the eyes of his beloved sister.</p>
+            <form action="https://youtu.be/IHpNhhLLvUM?si=pRgMo45K98oQsI6p">
+                <input type="submit" value="Watch it Here" class="button1">
+            </form>
+        </div>
+        <div class="card">
+            <img src="./images/manang.png" alt="Project Two" class="project-image">
+            <h3>Manang</h3>
+            <p>A 2D Horror Game made in Pygame. Leonardo III M. Calupig is the main concept designer and lead developer behind it. </p>
+            <input type="submit" value="Coming Soon" class="button1">
+        </div>
+        <div class="card">
+            <img src="./images/python.jpg" alt="Project Three" class="project-image">
+            <h3>Python Programming Language</h3>
+            <p>Leonardo III M. Calupig started learning programming during his First Year as a BSCE student. When he shifted to BSEMC, his skills in programming further enhanced as part of his journey to success.</p>
+        </div>
+    </div>
+</section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me at calupigleonardoiii@gmail.com</p>
+        <p>You can call me at +63 915 833 2951</p>
+    </section>
+
+    <footer>
+        © 2025 Leonardo III Calupig. All rights reserved. Project for M005 - CP100
+    </footer>
+</body>
+</html>
